@@ -12,6 +12,7 @@ div
     GridLayer(:mapState="mapState", v-show="showLayers.grid")
     StatusLayer(:mapState="mapState", v-show="showLayers.status")
     OverlayLayer(:mapState="mapState")
+    // ToolLayer
     LogoLayer
     CopyrightLayer
     MouseLocationLayer(:operationState="operationState", v-show="showLayers.mouseLocation")
@@ -23,6 +24,7 @@ import TileLayer from '@/components/layers/TileLayer'
 import GridLayer from '@/components/layers/GridLayer'
 import LogoLayer from '@/components/layers/LogoLayer'
 import OverlayLayer from '@/components/layers/OverlayLayer'
+// import ToolLayer from '@/components/layers/ToolLayer'
 import StatusLayer from '@/components/layers/StatusLayer'
 import CopyrightLayer from '@/components/layers/CopyrightLayer'
 import MouseLocationLayer from '@/components/layers/MouseLocationLayer'

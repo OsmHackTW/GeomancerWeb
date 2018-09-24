@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import MapViewer from '@/components/MapViewer'
+import Privacy from '@/components/Privacy'
 
 Vue.use(Router)
 
@@ -22,6 +23,12 @@ export default new Router({
     {
       path: '/',
       redirect: '/mapviewer'
+    },
+    // 隱私權聲明
+    {
+      name: 'privacy',
+      path: '/privacy',
+      component: Privacy
     }
   ]
 })

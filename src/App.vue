@@ -22,8 +22,8 @@ export default {
       const appHeight = this.clientHeight - this.borderWidth * 2
       return {
         width: appWidth + 'px',
-        height: appHeight + 'px',
-        border: this.borderWidth + 'px dashed #000000'
+        height: appHeight + 'px'
+        /* border: this.borderWidth + 'px dashed #000000' */
       }
     }
   },
