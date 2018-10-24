@@ -21,7 +21,7 @@ export default {
 <style scoped>
 #status-layer {
   position: absolute;
-  right: 5px;
+  left: 5px;
   top: 5px;
   min-width: 230px;
   padding: 5px 10px;

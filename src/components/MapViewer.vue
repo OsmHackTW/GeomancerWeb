@@ -8,11 +8,11 @@ div
     @dblclick="onMouseDoubleClick",
     @wheel="onMouseWheel"
   )
-    TileLayer(:mapState="mapState")
-    GridLayer(:mapState="mapState", v-show="showLayers.grid")
+    // TileLayer(:mapState="mapState")
+    // GridLayer(:mapState="mapState", v-show="showLayers.grid")
     StatusLayer(:mapState="mapState", v-show="showLayers.status")
-    OverlayLayer(:mapState="mapState")
-    // ToolLayer
+    EditingToolLayer(:mapState="mapState")
+    // OverlayLayer(:mapState="mapState")
     LogoLayer
     CopyrightLayer
     MouseLocationLayer(:operationState="operationState", v-show="showLayers.mouseLocation")
@@ -24,13 +24,13 @@ import TileLayer from '@/components/layers/TileLayer'
 import GridLayer from '@/components/layers/GridLayer'
 import LogoLayer from '@/components/layers/LogoLayer'
 import OverlayLayer from '@/components/layers/OverlayLayer'
-// import ToolLayer from '@/components/layers/ToolLayer'
+import EditingToolLayer from '@/components/layers/EditingToolLayer'
 import StatusLayer from '@/components/layers/StatusLayer'
 import CopyrightLayer from '@/components/layers/CopyrightLayer'
 import MouseLocationLayer from '@/components/layers/MouseLocationLayer'
 
 export default {
-  components: { TileLayer, GridLayer, OverlayLayer, StatusLayer, LogoLayer, CopyrightLayer, MouseLocationLayer },
+  components: { TileLayer, GridLayer, OverlayLayer, EditingToolLayer, StatusLayer, LogoLayer, CopyrightLayer, MouseLocationLayer },
 
   data () {
     // TODO: path validation
@@ -57,9 +57,9 @@ export default {
       },
       // 圖層開關狀態
       showLayers: {
-        status: false,
-        grid: false,
-        mouseLocation: false
+        status: true,
+        grid: true,
+        mouseLocation: true
       }
     }
   },
