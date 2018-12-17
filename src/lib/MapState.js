@@ -21,7 +21,7 @@ export default {
     const n = 100000
     const x = Math.floor(center.x * n) / n
     const y = Math.floor(center.y * n) / n
-    this.center = {x, y}
+    this.center = { x, y }
     this.updateTileCenter()
     this.updateTileBeginAt()
     this.updateBoundingBox()
@@ -62,7 +62,7 @@ export default {
     const x = clientSize.width / 2
     const y = clientSize.height / 2
     this.clientSize = clientSize
-    this.clientCenter = {x, y}
+    this.clientCenter = { x, y }
     this.updateTileCount()
     this.updateTileBeginAt()
     this.updateBoundingBox()
@@ -99,7 +99,7 @@ export default {
   updateTileCount () {
     const cols = Math.ceil(this.clientSize.width / this.tileSize) + 1
     const rows = Math.ceil(this.clientSize.height / this.tileSize) + 1
-    this.tileCount = {cols, rows}
+    this.tileCount = { cols, rows }
   },
 
   // 重新計算中心點圖磚座標
@@ -130,7 +130,7 @@ export default {
     const p = 1000
     const x = Math.floor(tx * p) / p
     const y = Math.floor(ty * p) / p
-    return {x, y}
+    return { x, y }
   },
 
   // 圖磚座標 -> WGS84座標
@@ -141,7 +141,7 @@ export default {
     const p = 100000
     const x = Math.floor(gx * p) / p
     const y = Math.floor(gy * p) / p
-    return {x, y}
+    return { x, y }
   },
 
   // WGS84座標 -> 介面座標
