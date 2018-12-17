@@ -8,11 +8,11 @@ div
     @dblclick="onMouseDoubleClick",
     @wheel="onMouseWheel"
   )
-    // TileLayer(:mapState="mapState")
-    // GridLayer(:mapState="mapState", v-show="showLayers.grid")
+    TileLayer(:mapState="mapState")
+    GridLayer(:mapState="mapState", v-show="showLayers.grid")
     StatusLayer(:mapState="mapState", v-show="showLayers.status")
     EditingToolLayer(:mapState="mapState")
-    // OverlayLayer(:mapState="mapState")
+    OverlayLayer(:mapState="mapState")
     LogoLayer
     CopyrightLayer
     MouseLocationLayer(:operationState="operationState", v-show="showLayers.mouseLocation")
