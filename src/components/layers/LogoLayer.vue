@@ -1,6 +1,6 @@
 <template lang="pug">
 div(id="logo-layer")
-  img(src="@/assets/geomancer.png", width="16")
+  img(src="/geomancer.png", width="16")
   div(class="name") 鄉民風水師 Web
 </template>
 
